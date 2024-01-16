@@ -13,7 +13,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <!-- Schemas -->
     <AdditionalFiles Include="sample.avsc" />
+    <!-- Protocols -->
     <AdditionalFiles Include="sample.avproto" />
   </ItemGroup>
 

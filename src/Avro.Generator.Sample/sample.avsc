@@ -6,14 +6,86 @@
         {
             "name": "id",
             "default": null,
-            "type": ["null", "int"],
+            "type": [
+                "null",
+                "int"
+            ],
             "doc": "identifier for this item"
         },
         {
             "name": "name",
             "default": null,
-            "type": ["null", "string"],
+            "type": [
+                "null",
+                "string"
+            ],
             "doc": "name for this item"
+        },
+        {
+            "name": "status",
+            "default": null,
+            "type": [
+                "null",
+                {
+                    "namespace": "dev.ludwhe.avro.generator",
+                    "type": "record",
+                    "name": "Success",
+                    "fields": [
+                        {
+                            "name": "id",
+                            "default": null,
+                            "type": [
+                                "null",
+                                "int"
+                            ],
+                            "doc": "identifier for this success"
+                        },
+                        {
+                            "name": "congratulations",
+                            "default": null,
+                            "type": [
+                                "null",
+                                "string"
+                            ],
+                            "doc": "congratulations text"
+                        }
+                    ]
+                },
+                {
+                    "namespace": "dev.ludwhe.avro.generator",
+                    "type": "record",
+                    "name": "Error",
+                    "fields": [
+                        {
+                            "name": "id",
+                            "default": null,
+                            "type": [
+                                "null",
+                                "int"
+                            ],
+                            "doc": "identifier for this error"
+                        },
+                        {
+                            "name": "severity",
+                            "default": null,
+                            "type": [
+                                "null",
+                                "int"
+                            ],
+                            "doc": "severity of this error"
+                        },
+                        {
+                            "name": "mitigation",
+                            "default": null,
+                            "type": [
+                                "null",
+                                "string"
+                            ],
+                            "doc": "recommended mitigation for this error"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
