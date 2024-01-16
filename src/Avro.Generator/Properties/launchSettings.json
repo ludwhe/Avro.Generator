@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Avro.Generator": {
+      "commandName": "DebugRoslynComponent",
+      "targetProject": "..\\Avro.Generator.Sample\\Avro.Generator.Sample.csproj"
+    }
+  }
+}

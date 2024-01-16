@@ -1,0 +1,19 @@
+{
+    "namespace": "dev.ludwhe.avro.generator",
+    "type": "record",
+    "name": "Sample",
+    "fields": [
+        {
+            "name": "id",
+            "default": null,
+            "type": ["null", "int"],
+            "doc": "identifier for this item"
+        },
+        {
+            "name": "name",
+            "default": null,
+            "type": ["null", "string"],
+            "doc": "name for this item"
+        }
+    ]
+}
